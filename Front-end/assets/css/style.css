@@ -1,0 +1,431 @@
+
+
+
+
+/* Header */
+
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+  @media only screen and (max-width : 768px){
+ .navbar-brand {
+  padding: 0px;
+  transform: translateX(-50%);
+  left: 20%;
+  position: absolute;
+}
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding: 7px 14px; 
+}
+}
+
+.navbar-brand {
+  background: url(../.././assets/imgs/titleimage1.jpg) center / contain no-repeat;
+  width: 200px;
+  transform: translateX(-50%);
+  left: 90%;
+  position: absolute;
+}
+
+.navbar-brand:hover
+{
+  color:#F0F3BD;
+}
+
+
+
+
+/* Containers in the page */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 45%;
+    padding: 10px;
+    margin: 3px;
+    min-height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column2 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin: 3px;
+    min-height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column3 {
+    float: left;
+    width: 45%;
+    padding: 10px;
+    margin: 3px;
+    min-height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#row1column1div1
+{
+  margin-left: 4%;
+    min-height: 113px; /* Should be removed. Only for demonstration */
+  }
+
+#row1column1div2
+{
+  margin-left: 2%;
+  min-height: 100px; /* Should be removed. Only for demonstration */
+
+}
+
+#row2column2div1
+{
+  margin-left: 4%;
+}
+
+#row2column2div2
+{
+  margin-left: 1%;
+}
+
+#row2column2div3
+{
+  margin-left: 1%;
+}
+
+
+#row3column3div1
+{
+  margin-left: 4%;
+}
+
+#row3column3div2
+{
+  margin-left: 2%;
+  min-height: 130px;
+}
+
+
+
+
+
+
+
+/*button css */
+
+#buttonwithhover
+{
+  background-color:#003459;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+
+#buttonwithhover:hover {
+    background-color: #00A8E8;
+}
+
+
+
+#resetbuttonwithhover
+{
+    background-color:#003459;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 50%;
+}
+#resetbuttonwithhover:hover {
+    background-color: #00A8E8;
+}
+
+
+/*Label css */
+
+.labeloftextboxcss {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+/*Text box css */
+
+.textboxcss{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.totalmapperrequiredtextboxcss
+{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+
+.estimatednumberofnodestextboxcss
+{
+  width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    resize: vertical;
+}
+
+
+.inputsize
+{
+width: 100%;
+margin-top: 20px
+}
+
+
+/*Text css */
+.whitener
+{
+color: #FFFFFF;
+}
+
+/*Inside container spacing css */
+
+.col-25-row1 {
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+}
+
+.col-75-row1 {
+    float: right;
+    width: 55%;
+    margin-top: 20px;
+}
+
+.col-25-row1-div2 {
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+    margin-right: 50%
+}
+
+.col-75-row1-div2 {
+    float: left;
+    width: 55%;
+    margin-left: 45%;
+    margin-top: -25px;
+}
+
+
+.col-25-row2 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75-row2 {
+    float: left;
+    width: 50%;
+
+}
+
+.col-100-row2 {
+  float: left;
+  margin-top: 22px;
+}
+
+.col-25-row2-div1 {
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+    margin-right: 50px
+}
+
+.col-75-row2-div1 {
+    float: left;
+    width: 55%;
+    margin-left: 105px;
+    margin-top: -40px;
+}
+
+.col-25-row2-div2 {
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+    margin-right: 50px
+}
+
+.col-75-row2-div2 {
+    float: left;
+    width: 55%;
+    margin-left: 150px;
+    margin-top: -37px;
+}
+
+
+.col-25-row3 {
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+}
+
+.col-75-row3 {
+    float: right;
+    width: 55%;
+    margin-top: 20px;
+}
+
+.col-25-row3-div1 {
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+    margin-right: 50%
+}
+
+.col-75-row3-div1 {
+    float: left;
+    width: 55%;
+    margin-left: 45%;
+    margin-top: -40px;
+}
+
+
+.col-25-row4 {
+    width: 40%;
+    margin-top: 6px;
+    margin-left: 40% 
+}
+
+
+
+@media (max-width: 600px)
+{
+    .col-25, .col-75
+    { width: 100%;}
+.col-25-row1 {width: 100%;margin-top: 0;}
+
+.col-75-row1 {
+        width: 100%;
+        margin-top: 0;
+}
+
+.col-25-row1-div2 {
+        width: 100%;
+        margin-top: 0;
+}
+
+.col-75-row1-div2 {
+        width: 100%;
+        margin-top: 0;
+}
+
+
+.col-25-row2 {
+        width: 100%;
+        margin-top: 0;
+}
+
+.col-75-row2 {
+        width: 100%;
+        margin-top: 0;
+
+}
+
+.col-100-row2 {
+        width: 100%;
+        margin-top: 0;
+}
+
+.col-25-row2-div1 {
+        width: 100%;
+        margin-top: 0;
+}
+
+.col-75-row2-div1 {
+        width: 100%;
+        margin-top: 0;
+}
+
+.col-25-row2-div2 {
+        width: 100%;
+        margin-top: 0;
+}
+
+.col-75-row2-div2 {
+        width: 100%;
+        margin-top: 0;
+}
+
+
+.col-25-row3 {
+         width: 100%;
+        margin-top: 0;
+}
+
+.col-75-row3 {
+        width: 100%;
+        margin-top: 0;
+}
+
+.col-25-row3-div1 {
+        width: 100%;
+        margin-top: 0;
+}
+
+.col-75-row3-div1 {
+        width: 100%;
+        margin-top: 0;
+}
+}
+
+

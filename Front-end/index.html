@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="EMR Resource calculator">
+        <meta name="author" content="mailtodavidjegan@gmail.com">
+        <title>EMR Pricing</title>
+    
+        <!-- Theme CSS -->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!-- Required CSS -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arvo">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+        <!-- Required JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body background="./assets/imgs/background3.jpg">
+         <nav class="navbar navbar-inverse navbar-static-top" style="background-color:#00171F">
+            <div class="container" id="header">
+              <div class="navbar-header">
+                <a class="navbar-brand text-hide" href="#">Brand Text</a>
+              </div>
+              <div id="navbar8" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                  <li>
+                    <a href="" style="color: #FFFFFF">EMR Mapper Tool</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+         <div class="row1">
+            <div class="column1" id="row1column1div1" style="background-color:#007EA7;"> 
+              <div class="col-25-row1">
+                <label class="labeloftextboxcss whitener"> Category of instance</label>
+              </div>
+              <div class="col-75-row1">
+                <select id='purpose' class='dropdown-select'>
+                  <option value="null" disabled selected>Select your option</option>
+                </select> 
+              </div>
+             <br>
+              <div class="col-25-row1-div2">
+                <label  class="whitener" id='labeloftextboxindiv2' style="margin-left: 0px">Instance type</label>
+              </div>
+              <div class="col-75-row1-div2">
+              <select style='display:none;' id='GeneralPurpose'>
+                <option value="" disabled selected>Select One</option>
+              </select>
+              <select style='display:none;' id='ComputeOptimised'>
+                <option value="" disabled selected>Select One</option>
+              </select>
+              <select style='display:none;' id='StorageOptimised'>   
+                <option value="" disabled selected>Select One</option>
+              </select>
+              <select style='display:none;' id='MemoryOptimised'>
+                <option value="" disabled selected>Select One</option>
+              </select> 
+              </div>
+            </div>
+            <div class="column1" id="row1column1div2" style="background-color:#007EA7;">
+              <label for="mapperlabel" class="whitener">Mapper Capacity</label>
+              <input type="text" class="textboxcss" name="mapperlabel" id='mapperlabel' disabled>             
+            </div>
+          </div>
+
+
+        <div class="row2">
+            <div class="column2" id="row2column2div1" style="background-color:#007EA7;">
+              <div class="col-25-row2">
+                <label class="labeloftextboxcss whitener"> Input Size</label>
+              </div>
+              <div class="col-75-row2">
+                <input id="totalsizeofinput" type="number" class="inputsize" name="quantity" min='0' minlength='1' required>
+              </div>  
+              <div class="col-100-row2">
+                <select id='totalsizeofinputselect'>    
+                  <option id="totalsizeofinput1" value="MB" checked>MB</option>
+                  <option id="totalsizeofinput2" value="GB">GB</option>
+                  <option id="totalsizeofinput3" value="TB">TB</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="column2" id="row2column2div2" style="background-color:#007EA7;" id='inputsplitsize'>
+              <div class="col-25-row2-div2">
+                <label class="labeloftextboxcss whitener"> Input Split Size </label>
+              </div>
+              <div class="col-75-row2-div2">
+              <select id='inputsplitsizeselect'>  
+                <option id="inputsplitsize1" value="64" checked>64  MB</option>
+                <option id="inputsplitsize2" value="128">128 MB</option>
+                <option id="inputsplitsize3" value="256">256 MB</option>
+              </select>
+              </div>
+            </div>
+            <div class="column2" id="row2column2div3" style="background-color:#007EA7;" id='inputsplitsize1'>
+              <label for="totalmapperrequired" class="whitener">Mapper Required</label>
+              <input type="text" class="totalmapperrequiredtextboxcss" name="totalmapperrequired" id='totalmapperrequired' disabled>
+            </div>
+          </div>
+
+
+          <div class="row3">
+            <div class="column3" id="row3column3div1" style="background-color:#007EA7;">
+              <div class="col-25-row3">
+                <label class="labeloftextboxcss whitener"> Sample Processing Time</label>
+              </div>
+              <div class="col-75-row3">
+                <input id="timeforprocessingasamplefile" type="number" name="quantity" min="0"> 
+                <label class="whitener">minutes</label>
+              </div>
+              <div class="col-25-row3-div1">
+                <label class="labeloftextboxcss whitener"> Desired Processing Time</label>
+              </div>
+              <div class="col-75-row3-div1">
+                <input id="desiredprocessingtime" type="number" name="quantity" min="0"> 
+                <label class="whitener">minutes</label> 
+              </div>
+              </div>
+              <div class="column3" id="row3column3div2" style="background-color:#007EA7">
+                <label for="estimatednumberofnodes" class="whitener">Estimated Number of nodes</label>
+                <input type="text" class="estimatednumberofnodestextboxcss" name="estimatednumberofnodes" id='estimatednumberofnodes' disabled>
+              </div>
+          </div>
+
+
+
+          <div class="row4">
+              <div class="col-25-row4">
+                <button type="button" onclick="resetitems()" id="resetbuttonwithhover">Reset </button>
+              </div>  
+          <!-- Custom scripts for this template -->
+          <script src="assets/js/script.js"></script>
+
+</body>
+</html>
